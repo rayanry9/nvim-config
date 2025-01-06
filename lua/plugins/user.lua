@@ -77,9 +77,8 @@ return {
     end
   },
   { "hrsh7th/cmp-nvim-lsp" },
-  { "micangl/cmp-vimtex" },
-  { "hrsh7th/nvim-cmp",
-  },{
+  { "hrsh7th/nvim-cmp" }  ,
+  {
     "windwp/nvim-autopairs",
     config = function(plugin, opts)
       require "astronvim.plugins.configs.nvim-autopairs"(plugin, opts) -- include the default astronvim config that calls the setup call
