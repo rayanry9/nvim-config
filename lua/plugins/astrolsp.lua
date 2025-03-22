@@ -37,6 +37,17 @@ return {
     },
     -- enable servers that you already have installed without mason
     servers = {
+      tailwindcss = {
+        settings = {
+          tailwindCSS = {
+            experimental = {
+              classRegex = {
+                { "([\"'`][^\"'`]*.*?[\"'`])", "[\"'`]([^\"'`]*).*?[\"'`]" }
+              },
+            },
+          },
+        },
+      },
       -- "pyright"
     },
     -- customize language server configuration options passed to `lspconfig`
@@ -48,7 +59,7 @@ return {
       ts_ls = {
         root_dir = require('lspconfig').util.root_pattern("package.json"),
         single_file_support = false
-      }
+      },
       -- clangd = { capabilities = { offsetEncoding = "utf-8" } },
     },
     -- customize how language servers are attached

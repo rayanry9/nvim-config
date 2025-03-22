@@ -9,9 +9,14 @@ return {
       "vim",
       -- add more arguments for adding more treesitter parsers
     },
+    indent = {
+      enable = true,
+      disable = { "dart" }
+
+    }
   },
   highlight ={
     enable = true,
-    disable = {"latex"}
-  }
+    disable = { "latex" }
+  },
 }
