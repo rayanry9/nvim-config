@@ -1,5 +1,11 @@
-require("lsp/luals")
+require("lsp.luals")
+require("lsp.svelte")
+require("lsp.ts_ls")
+require("lsp.tailwindcss")
 
 vim.lsp.enable("lua_ls")
 vim.lsp.enable("ts_ls")
 vim.lsp.enable("gopls")
+vim.lsp.enable("svelte-language-server")
+vim.lsp.enable("tailwindcss-language-server")
+vim.lsp.enable("dockerfile-language-server")

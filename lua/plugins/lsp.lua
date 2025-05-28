@@ -3,15 +3,15 @@ return {
 	{
 		'nvim-treesitter/nvim-treesitter',
 		lazy = false,
-		branch = 'master',
+		branch = 'main',
 		build = ':TSUpdate',
-		opts = {
-			ensure_installed = { "c", "lua", "vim", "typescript", "javascript", "html", "css", "go", "bash", "dart", "dockerfile", "gitignore", "gomod", "gosum", "json5", "latex", "make", "python", "sql"},
-			highlight = {
-				enable = true
-			}
-
-		}
+		config = function ()
+			require("nvim-treesitter.configs").setup({
+                ensure_installed = { "c", "lua", "vim", "vimdoc", "query", "markdown", "markdown_inline", "bash", "tmux" },
+                auto_install = true,
+                highlight = { enable = true },
+							})
+		end
 	},
 	{
 		"mason-org/mason.nvim",

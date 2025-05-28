@@ -3,6 +3,7 @@ require("config.lazy")
 require("keymaps.telescope")
 require("lsp")
 
+
 vim.cmd.colorscheme "catppuccin-mocha"
 
 vim.opt.smarttab = false
@@ -17,7 +18,6 @@ vim.opt.relativenumber = true
 vim.opt.history = 1000
 
 vim.opt.cursorline = true
-vim.opt.cursorcolumn = true
 
 vim.opt.wildmenu = true
 
