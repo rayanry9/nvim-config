@@ -1,10 +1,10 @@
+vim.opt.termguicolors = true
 require("keymaps")
 require("config.lazy")
-require("keymaps.telescope")
+require("keymaps.others")
 require("lsp")
 
-
-vim.cmd.colorscheme "catppuccin-mocha"
+vim.cmd.colorscheme("catppuccin-mocha")
 
 vim.opt.smarttab = false
 vim.opt.autoindent = true
@@ -17,8 +17,7 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.history = 1000
 
-vim.opt.cursorline = true
-
 vim.opt.wildmenu = true
 
-
+vim.g.clipboard = "wl-copy"
+vim.opt.clipboard = "unnamedplus"
