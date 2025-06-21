@@ -28,6 +28,9 @@ return {
 			jsx = { "prettierd" },
 			html = { "prettierd" },
 			css = { "prettierd" },
+			cmake = { "cmake_format" },
+			c = { "clang_format" },
+			cpp = { "clang_format" },
 		},
 		-- Set default options
 		default_format_opts = {
