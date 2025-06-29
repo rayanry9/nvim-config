@@ -6,3 +6,5 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz", { noremap = true })
 vim.keymap.set("n", "<leader><tab>", ":b#<CR>")
 
 vim.keymap.set("n", "<Esc>", ":nohlsearch<CR><Esc>", { noremap = true })
+
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
