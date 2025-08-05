@@ -21,3 +21,5 @@ vim.opt.wildmenu = true
 
 vim.g.clipboard = "wl-copy"
 vim.opt.clipboard = "unnamedplus"
+
+vim.opt.timeoutlen = 500
