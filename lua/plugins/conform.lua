@@ -21,17 +21,21 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			go = { "gofmt" },
-			javascript = { "prettierd", "prettier", stop_after_first = true },
+			javascript = { "prettierd" },
 			typescript = { "prettierd" },
 			svelte = { "prettierd" },
 			tsx = { "prettierd" },
 			jsx = { "prettierd" },
+			typescriptreact = { "prettierd" },
+			javascriptreact = { "prettierd" },
 			html = { "prettierd" },
 			css = { "prettierd" },
 			cmake = { "cmake_format" },
 			c = { "clang_format" },
 			cpp = { "clang_format" },
 			typst = { "prettypst" },
+			json = { "prettierd" },
+			prettierrc = { "prettier" },
 		},
 		-- Set default options
 		default_format_opts = {
