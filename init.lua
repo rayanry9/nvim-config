@@ -3,6 +3,7 @@ require("keymaps")
 require("config.lazy")
 require("keymaps.others")
 require("lsp")
+require("autocmd")
 
 vim.cmd.colorscheme("catppuccin-mocha")
 

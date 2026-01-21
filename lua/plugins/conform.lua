@@ -51,6 +51,11 @@ return {
 		end,
 		-- Customize formatters
 		formatters = {
+			clang_format = {
+				prepend_args = {
+					"--style=Google",
+				},
+			},
 			shfmt = {
 				prepend_args = { "-i", "2" },
 			},
