@@ -4,7 +4,7 @@ vim.api.nvim_create_autocmd("BufEnter", {
 	pattern = { "*.c", "*.cpp" },
 	group = ft_group,
 	callback = function(ev)
-		if string.match(ev.file, "tle") or string.match(ev.file, "codechef") then
+		if string.match(ev.file, "tle") or string.match(ev.file, "codeforces") then
 			if vim.api.nvim_buf_line_count(ev.buf) == 1 then
 				vim.api.nvim_buf_set_lines(ev.buf, 0, 0, false, {
 					"#include<iostream>",
