@@ -5,7 +5,7 @@ return {
 	keys = {
 		{
 			-- Customize or remove this keymap to your liking
-			"<leader>f",
+			"<leader>cc",
 			function()
 				require("conform").format({ async = true })
 			end,
@@ -28,6 +28,7 @@ return {
 			jsx = { "prettierd" },
 			typescriptreact = { "prettierd" },
 			javascriptreact = { "prettierd" },
+			python = { "ruff_organize_imports", "ruff_format" },
 			html = { "prettierd" },
 			css = { "prettierd" },
 			cmake = { "cmake_format" },
