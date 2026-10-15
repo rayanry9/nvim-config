@@ -24,3 +24,8 @@ vim.g.clipboard = "wl-copy"
 vim.opt.clipboard = "unnamedplus"
 
 vim.opt.timeoutlen = 500
+
+vim.opt.foldmethod = "indent"
+vim.opt.foldcolumn = "4"
+vim.opt.foldlevelstart = 99
+vim.opt.foldlevel = 99
